@@ -334,21 +334,21 @@ section{
 }
 .num1-color{
 color:#FE4A49;
-font-family: 'Playball', cursive;
+font-family: 'Playfair Display SC', serif;
 }
 
 .num2-color{
     color:#FED766;
-    font-family: 'Playball', cursive;
+    font-family: 'Playfair Display SC', serif;
     }
 
     .times{
         color:whitesmoke;
-        font-family: 'Playball', cursive;
+        font-family: 'Playfair Display SC', serif;
     }
     .equals{
         color:#F86624;
-        font-family: 'Playball', cursive;
+        font-family: 'Playfair Display SC', serif;
     }
 .question-area span {
     padding: 0 15px;
@@ -386,7 +386,7 @@ font-family: 'Playball', cursive;
     
     background:rgba(17, 172, 161);
     text-align: center;
-    font-family: 'Playball', cursive;
+    font-family: 'Playfair Display SC', serif;
     
 }
 
