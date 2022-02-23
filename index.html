@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+		type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<title>Learn Math</title>
+
+</head>
+
+<body id="landing_page" class="landing-page ">
+	<!--Audio for correct or incorrect answers-->
+	<audio id="myAudio">
+		<source src="Wrong-answer-sound-effect.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="myAudio-1">
+		<source src="correct-answer.mp3" type="audio/mpeg">
+	</audio>
+	<!--header -->
+	<header>
+		<div class="container-fluid">
+			<div class="nav-1">
+				<a class="logo" href="index.html"> <i class="fas fa-calculator"></i> Learn <span class="top">Math </span> </a>
+				<img class="hero-image img-fluid" src="math-page-3.jpg" alt="">
+				<nav id="nav_1">
+					<ul>
+						<li class="final-score final-score-1">scores <span class="scores" id="score">0</span> | <span class="scores"
+								id="incorrect">0</span></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--header end here-->
+	<!--home page content-->
+	<div id="logo_heading" class=" logo-heading ">
+		<span class=" welcome-1">Let's Learn a Math.. </span><br>
+		<div class="join-us">
+			<button id="btn-start" class="btn button-btn hvr-sweep-to-bottom">Learn Math</button>
+		</div>
+	</div>
+	<!--home page content end here-->
+	<section id="list-1">
+		<div class="container">
+			<div class="row  ">
+				<ul>
+					<div class="col-xs-6 col-sm-3 text">
+						<li class="current "><button data-type="addition" class="btn btn-green active"><span class=" hidden-icon ">
+									Addition</button></li>
+					</div>
+					<div class=" col-xs-6 col-sm-3 text">
+						<li><button data-type="subtract" class="btn btn-red active ">Subtract</button></li>
+					</div>
+					<div class="col-xs-6  col-sm-3 text">
+						<li><button data-type="multiply" class="btn btn-blue active">Multiply</button></li>
+					</div>
+					<div class=" col-xs-6 col-sm-3 text">
+						<li><button data-type="division" class="btn btn-yellow active ">Division</button></li>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!--math exercise section-->
+	<div id="game_area" class=" game-area game-area-1 ">
+		<div class="question-area">
+			<span id="operand1" class="num1-color">0</span>
+			<span id="operator" class="times">x</span>
+			<span id="operand2" class="num2-color">0</span>
+			<span id="equals" class="equals">=</span>
+			<p class="answer-message">Enter Answer:</p>
+			<input id="answer-box" name="answer" type="number" placeholder="?">
+			<div>
+				<button data-type="submit" class="btn btn-gray hvr-sweep-to-bottom">Submit Answer</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="script.js"></script>
+
+	<script>
+		const btnStart1 = document.getElementById("btn-start-1");
+		const startButton = document.getElementById("btn-start");
+		const landingPage = document.getElementById("landing_page");
+		const logoHeading = document.getElementById("logo_heading");
+		const mathContainer = document.getElementById("math_container");
+		const gameArea = document.getElementById("game_area");
+		const nav1 = document.getElementById("nav_1");
+		const list1 = document.getElementById("list-1")
+
+		// Get the home page button element, and add event listener
+
+		startButton.addEventListener("click", function () {
+			landingPage.classList.remove("landing-page");
+			logoHeading.classList.remove("logo-heading");
+			landingPage.setAttribute("class", "landing-page-2");
+			logoHeading.setAttribute("class", "logo-heading-1");
+			gameArea.setAttribute("class", "game-area-2");
+			nav1.setAttribute("class", "nav-2");
+			gameArea.classList.remove("game-area");
+			list1.setAttribute("class", "list-section");
+			myAudioTesting1.setAttribute("class", "sound-correct1");
+
+
+		});
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+		</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+		</script>
+
+</body>
+
+</html>
