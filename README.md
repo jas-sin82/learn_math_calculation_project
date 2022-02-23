@@ -1,5 +1,6 @@
 # learn_math_calculation_project
-Learn how to calculate Add, Subtract, Multiply &amp; Divide !
+
+Test your math skills with this basic math practice test with addition, subtraction, division and multiplication problems.
 
 [View Live Project Here](https://jas-sin82.github.io/learn_math_calculation_project/)
 
