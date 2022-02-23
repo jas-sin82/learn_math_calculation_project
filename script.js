@@ -25,12 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//  Audio variables for correct and wrong answers
-
-const audio = document.getElementById("myAudio");
-const audio1 = document.getElementById("myAudio-1");
-
-
 // The main game "loop", called when the script is first loaded
 // and after the user's answer has been processed
 
@@ -77,14 +71,10 @@ function checkAnswer() {
 
     if (isCorrect) {
 
-        // alert("Hey! You got it right :D");
-        audio1.play();
-
         incrementScore();
     }
     else {
-        //alert(`Awww...you answered ${userAnswer}, the correct answer was ${calculatedAnswer[0]} :(`);
-        audio.play();
+
         incrementWrongAnswer();
     }
 
